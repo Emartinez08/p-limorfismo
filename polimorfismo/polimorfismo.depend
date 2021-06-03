@@ -1,20 +1,21 @@
 # depslib dependency file v1.0
-1622665708 source:c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\src\fraccion.cpp
+1622692842 source:c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\src\fraccion.cpp
 	"Fraccion.h"
 	<iostream>
 
-1622665646 c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\include\fraccion.h
+1622692842 c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\include\fraccion.h
 
-1622665431 source:c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\main.cpp
+1622694198 source:c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\main.cpp
 	"Fraccion.h"
 	"Vect.h"
 	<iostream>
 
-1622665431 c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\include\vect.h
+1622694251 c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\include\vect.h
 	"Fraccion.h"
 
-1622665692 source:c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\src\vect.cpp
+1622694251 source:c:\users\gaspe\onedrive\documentos\prograoobjetos\polimorfismo\src\vect.cpp
 	"Vect.h"
 	"Fraccion.h"
 	<iostream>
+	<math.h>
 

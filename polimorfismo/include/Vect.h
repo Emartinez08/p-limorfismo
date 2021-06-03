@@ -2,26 +2,25 @@
 #define VECT_H
 #include "Fraccion.h"
 
-class Vect
+class Vect:public Fraccion
 {
     public:
     Vect();
     Vect(int);
     Vect(int, Fraccion *);
     int get_size();
-    //Vect suma(Vect vec);
-    //void sumaInPlace(Arrfrac inaArrfrac);
-    //Vect multiplicacion(Arrfrac inaArrfrac);
     Fraccion get_fraccion(int);
     void set_fraccion(int, Fraccion);
     void agregar_fraccion(Fraccion);
-    //void eliminarFraccion(); // ultimo elemento
     void imprimir();
     Vect operator +(const Vect &f2);
     Vect operator -(const Vect &f2);
     Fraccion operator *(const Vect &f2);
+    Fraccion pp(Vect);
     Vect producto(Vect);
+    float magnitud();
     float angulo(Vect);
+    Vect producto(int);
 
     protected:
 
