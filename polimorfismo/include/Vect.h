@@ -18,6 +18,10 @@ class Vect
     //void eliminarFraccion(); // ultimo elemento
     void imprimir();
     Vect operator +(const Vect &f2);
+    Vect operator -(const Vect &f2);
+    Fraccion operator *(const Vect &f2);
+    Vect producto(Vect);
+    float angulo(Vect);
 
     protected:
 

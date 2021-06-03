@@ -70,3 +70,38 @@ Fraccion Fraccion::suma(Fraccion farg){
     Fraccion fresultado(num,den);
     return fresultado;
 }
+Fraccion Fraccion::resta(Fraccion farg){
+    int num = numerador * farg.get_denominador() -  denominador * farg.get_numerador();
+    int den = denominador * farg.get_denominador();
+    Fraccion fresultado(num,den);
+    return fresultado;
+}
+Fraccion Fraccion::multiplicacion(Fraccion farg){
+    int num = numerador * farg.get_numerador();
+    int den = denominador * farg.get_denominador();
+    Fraccion fresultado(num,den);
+    return fresultado;
+}
+Fraccion Fraccion::operator + (Fraccion const &farg){
+    int num = (numerador * farg.denominador) +  (denominador * farg.numerador);
+    int den = denominador * farg.denominador;
+    Fraccion fresultado(num,den);
+    return fresultado;
+    }
+Fraccion Fraccion::operator - (Fraccion const &farg){
+    int num = (numerador * farg.denominador) -  (denominador * farg.numerador);
+    int den = denominador * farg.denominador;
+    Fraccion fresultado(num,den);
+    return fresultado;
+    }
+Fraccion Fraccion::operator * (Fraccion const &farg){
+    int num = numerador * farg.numerador;
+    int den = denominador * farg.denominador;
+    Fraccion fresultado(num,den);
+    return fresultado;
+}
+//float operator /(const Fraccion &farg){
+   // int resp;
+ //   resp=num/den;
+   // return resp;
+//}

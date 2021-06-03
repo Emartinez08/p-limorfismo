@@ -30,7 +30,8 @@ int main(){
     cout << endl << "Evaluando la clase ArrFrac:" << endl << "============================" << endl;
     cout << "Definicion de arreglos:" << endl;
 
-    cout << "Arreglo 2 (af2): ";
+   // cout << "Arreglo 1 (af1): ";
+    Vect af1(4);
     Vect af2(4);
 
     Fraccion farray[4] = {f1,f2,f3,f6};
@@ -41,11 +42,26 @@ int main(){
     cout << "Arreglo 4 (af4): ";
     Vect af4(4,farray2);
 
+    Fraccion farray3[3]={f1,f2,f3};
+    Vect af5(3,farray3);
+    Fraccion farray4[3]={f4,f5,f6};
+    Vect af6(3,farray4);
 
-    cout << "Suma y multiplicacion de arreglos:" << endl;
+    Vect af7(3);
+
+    cout << "Suma de arreglos:" << endl;
     //cout << "af2 = af3 + af4:" << endl;
-    af2 = af3 + af4;
+    af1 = af3 + af4;
+    af1.imprimir();
+    cout << "resta de arreglos:" << endl;
+    af2 = af3 - af4;
     af2.imprimir();
+    cout << "producto punto:" << endl;
+    Fraccion fa(af3*af4);
+    //fa = af3 * af4;
+    fa.print();
+    af7=af5.producto(af6);
+    af7.imprimir();
     //af2.imprimir(false);
    // cout << "af2 = af3 * af3:" << endl;
   //  af2 = af3.multiplicacion(af3);
