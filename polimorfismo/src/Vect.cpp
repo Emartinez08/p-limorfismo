@@ -12,7 +12,7 @@ Vect::Vect(){
     sizeMem = 1;
 }
 
-//Constructor con tamaño especifico
+//Constructor con tamaÃ±o especifico
 Vect::Vect(int a){
     sizes = a;
     arr = new Fraccion[a];
@@ -26,7 +26,7 @@ Vect::Vect(int a, Fraccion * arrf){
     sizeMem = a;
 }
 
-//Obtener tamaño del arreglo
+//Obtener tamaÃ±o del arreglo
 int Vect::get_size(){
     return sizes;
 }
@@ -43,7 +43,7 @@ void Vect::set_fraccion(int i, Fraccion f){
 
 //Suma de fracciones (no modifica el objeto actual)
 //Vect Vect::suma(Vect otrov){ //inaArrfrac
-    // Si los tamaños de los arreglos coinciden
+    // Si los tamaÃ±os de los arreglos coinciden
   //  if(size == otrov.get_size()){
     //    Vect newvect(size);
       //  for (int i=0; i<size; i++){
@@ -59,7 +59,7 @@ void Vect::set_fraccion(int i, Fraccion f){
 
 //Multiplicacion de fracciones (no modifica el objeto actual)
 //Arrfrac Arrfrac::multiplicacion(Arrfrac inArrfrac){
-    // Si los tamaños de los arreglos coinciden
+    // Si los tamaÃ±os de los arreglos coinciden
   //  if(size == inArrfrac.getSize()){
     //    Arrfrac newArrfrac(size);
       //  for (int i=0; i<size; i++){
@@ -75,7 +75,7 @@ void Vect::set_fraccion(int i, Fraccion f){
 
 //Suma de fracciones (si modifica el objeto actual) [como ejemplo alternativo de la funcion suma]
 //void Arrfrac::sumaInPlace(Arrfrac inaArrfrac){
-    // Si los tamaños de los arreglos coinciden
+    // Si los tamaÃ±os de los arreglos coinciden
   //  if(size == inaArrfrac.getSize()){
     //    for (int i=0; i<size; i++){
             //Realiza la suma y la guarda en el objeto que llama este metodo
@@ -87,7 +87,7 @@ void Vect::set_fraccion(int i, Fraccion f){
 //}
 
 //void Arrfrac::agregarFraccion(Fraccion f){
-    // Se duplica el tamaño de la memoria para evitar trasladar arreglos de elementos cada que se agrega una fraccion
+    // Se duplica el tamaÃ±o de la memoria para evitar trasladar arreglos de elementos cada que se agrega una fraccion
   //  if(size+1 > sizeMem){
         //Se crea un nuevo arreglo de fracciones con el doble de memoria
     //    Fraccion * newArr = new Fraccion[size*2];
@@ -125,7 +125,7 @@ void Vect::set_fraccion(int i, Fraccion f){
 //ejemplo
 
 //Vect Vect::operacion(Vect otrov){ //inaArrfrac
-    // Si los tamaños de los arreglos coinciden
+    // Si los tamaÃ±os de los arreglos coinciden
    // if(size == otrov.get_size()){
        // Vect newvect(size);
 //friend Vect& operator +(const Vect &f1,const Vect &f2);
@@ -228,6 +228,26 @@ float Vect::angulo(Vect v2){
           f1=f1+(newvect.arr[i]);
           f2=f2+(newvect2.arr[i]);
         }
+        //escalamiento
+ Vect Vect::escalamiento(Vect v2){
+     int vector[sizes]
+         
+     Fraccion res(0,1);
+        if (sizes == f2.sizes){
+        Vect newvect(sizes);
+        for (int i=0; i<sizes; i++){
+          newvect.arr[i]=arr[i].multiplicacion(f2.arr[i]);
+          res=res.suma(newvect.arr[i]);
+         // num=num+newvect.arr[i].get_numerador();
+          //den=den+newvect.arr[i].get_denominador();
+        }
+       // Fraccion resp(num, den);
+        return res;
+        }
+        else
+            cout<<"Los vectores no tienen el mismo numero de elemetos" << endl;
+        return res;
+    } 
         //aqui empiezan los problemas
         float a,b,c,d,e;
         a=
